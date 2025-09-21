@@ -19,7 +19,7 @@ export default class Container {
 
     public resolve<C extends Class = Class>(cls: C): InstanceOf<C> {
         const meta: RegisteredClassMetadata | undefined = Reflect.getOwnMetadata(REGISTERED_CLASS_METADATA, cls);
-        if (!meta) throw new Error(`Class ${cls} is not registered in container`);
+        if (!meta) throw new Error(`Class ${cls} is not registered in DI`);
 
         const depsInstances = meta.dependencies.map(v => this.resolve(v));
         let instance: InstanceOf<typeof cls>;
