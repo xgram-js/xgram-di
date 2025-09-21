@@ -8,11 +8,16 @@ export interface RegisteredClassMetadata {
 }
 
 export default class Container {
-    public constructor() {}
+    public constructor() {
+        this.instanceStorage = new InstanceStorage();
+        this.instanceStorage.registerInstance(this);
+    }
 
-    private readonly instanceStorage: InstanceStorage = new InstanceStorage();
+    private readonly instanceStorage: InstanceStorage;
 
-    public resolve(cls: Class) {
+    public resolve<C extends Class = Class>(cls: C): InstanceOf<C> {
+        if (cls == Container) return this as InstanceOf<C>;
+
         const meta: RegisteredClassMetadata | undefined = Reflect.getOwnMetadata(REGISTERED_CLASS_METADATA, cls);
         if (!meta) throw new Error(`Class ${cls} is not registered in container`);
 
