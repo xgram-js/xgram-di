@@ -143,3 +143,4 @@ tsup.config.ts
 .idea
 .husky
 .github
+test
