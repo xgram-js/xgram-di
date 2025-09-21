@@ -31,10 +31,10 @@
     "typescript": "^5.9.2",
     "typescript-eslint": "^8.44.0"
   },
-  "lint-staged": {
-    "*.{js,ts,jsx,tsx,mjs,cjs,mts,cts,json,md}": "prettier --write"
-  },
   "dependencies": {
     "reflect-metadata": "^0.2.2"
+  },
+  "lint-staged": {
+    "*.{js,ts,jsx,tsx,mjs,cjs,mts,cts,json,md}": "prettier --write"
   }
 }
