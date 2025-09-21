@@ -1,0 +1,40 @@
+{
+  "name": "@xgram/di",
+  "version": "0.0.1",
+  "description": "",
+  "license": "LGPL-3.0-only",
+  "scripts": {
+    "style": "prettier . --write",
+    "lint": "eslint . --fix",
+    "prebuild": "npm run style",
+    "build": "tsup"
+  },
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "exports": {
+    "types": "./dist/index.d.ts",
+    "import": "./dist/index.js",
+    "require": "./dist/index.cjs"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
+    "@eslint/js": "^9.36.0",
+    "@trivago/prettier-plugin-sort-imports": "^5.2.2",
+    "eslint": "^9.36.0",
+    "globals": "^16.4.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.6",
+    "prettier": "^3.6.2",
+    "prettier-plugin-unused-imports-configurable": "^1.15.0",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.2",
+    "typescript-eslint": "^8.44.0"
+  },
+  "lint-staged": {
+    "*.{js,ts,jsx,tsx,mjs,cjs,mts,cts,json,md}": "prettier --write"
+  },
+  "dependencies": {
+    "reflect-metadata": "^0.2.2"
+  }
+}
