@@ -1,3 +1,4 @@
+import "reflect-metadata";
 import { Class } from "@/types/class";
 import { REGISTERED_CLASS_METADATA, RegisteredClassMetadata } from "@/container";
 
