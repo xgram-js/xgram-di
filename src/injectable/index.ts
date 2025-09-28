@@ -1,5 +1,5 @@
 import "reflect-metadata";
-import { Class } from "@/types/class";
+import { Class } from "@xgram/types";
 import { REGISTERED_CLASS_METADATA, RegisteredClassMetadata } from "@/container";
 
 export default function Injectable() {

@@ -1,4 +1,4 @@
-import { Class, InstanceOf } from "@/types/class";
+import { Class, InstanceOf } from "@xgram/types";
 import InstanceStorage from "@/instanceStorage";
 import Injectable from "@/injectable";
 

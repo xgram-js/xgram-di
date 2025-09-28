@@ -31,6 +31,9 @@
     "typescript": "^5.9.2",
     "typescript-eslint": "^8.44.0"
   },
+  "dependencies": {
+    "@xgram/types": "^0.0.1"
+  },
   "peerDependencies": {
     "reflect-metadata": "^0.2.2"
   },

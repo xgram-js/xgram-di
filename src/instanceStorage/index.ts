@@ -1,4 +1,4 @@
-import { Class, getClassOfInstance, InstanceOf } from "@/types/class";
+import { Class, getClassOfInstance, InstanceOf } from "@xgram/types";
 
 export type InstanceStorageMapType<C extends Class = Class> = Map<C, InstanceOf<C>>;
 

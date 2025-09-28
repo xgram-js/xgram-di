@@ -1,4 +1,4 @@
-import { Class } from "@/types/class";
+import { Class } from "@xgram/types";
 import { REGISTERED_CLASS_METADATA } from "@/container";
 
 export default function isInjectable(cls: Class) {
